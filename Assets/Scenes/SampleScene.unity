@@ -6041,6 +6041,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuSound: {fileID: 8300000, guid: 3716c23b9c0898849ba74b1c824b35f9, type: 3}
+  HitSounds:
+  - {fileID: 8300000, guid: c47c882779eb0d5468b27fc636f2f9a5, type: 3}
+  - {fileID: 8300000, guid: d2a235d4b5139cd4c9159b235007c629, type: 3}
+  - {fileID: 8300000, guid: bca2cd00244bb03449098acd1dddeb23, type: 3}
+  - {fileID: 8300000, guid: 1a6de1c7a4d101047975e717bcc05754, type: 3}
+  - {fileID: 8300000, guid: 27f3daff383a9f741b54386694051f9a, type: 3}
+  - {fileID: 8300000, guid: dc7338553cfb4a442b4f0fbfd55a6947, type: 3}
+  - {fileID: 8300000, guid: 631a640e31a5a78459a6ca85e64be7c6, type: 3}
+  - {fileID: 8300000, guid: 52b4dd61141ac4a4280fab31bedc241f, type: 3}
+  - {fileID: 8300000, guid: f7e36bbdb08a9874fa4c1dfa81a1b4fc, type: 3}
+  - {fileID: 8300000, guid: 2b2bc00ad9262924ea858163a8cb0b16, type: 3}
 --- !u!82 &1030370522
 AudioSource:
   m_ObjectHideFlags: 0

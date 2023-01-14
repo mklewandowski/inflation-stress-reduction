@@ -133,6 +133,8 @@ public class SceneManager : MonoBehaviour
         if (deflated)
             return;
 
+        audioManager.PlayHitSound();
+
         HUDItemImage.GetComponent<GrowAndShrink>().StartEffect();
         ParticlesCash.Play();
         ParticlesCoin.Play();
