@@ -6101,6 +6101,10 @@ MonoBehaviour:
   BooSounds:
   - {fileID: 8300000, guid: 40980c0eb37c2ea468f5bedc005af65c, type: 3}
   - {fileID: 8300000, guid: 5e0b31ca77d817c45906779aa8c0a594, type: 3}
+  - {fileID: 8300000, guid: 288c83ee2af9d664e9a854f698676d0f, type: 3}
+  - {fileID: 8300000, guid: bbca3755fc75ed543ba30487c520f506, type: 3}
+  - {fileID: 8300000, guid: 8251fe01d72ce0346b8892f7bbdd8d51, type: 3}
+  - {fileID: 8300000, guid: 80e06f2b0f1e86d41a0a2041206a4b5b, type: 3}
   CheerSound: {fileID: 8300000, guid: 23c959973803c08479a0bb14bef2add9, type: 3}
 --- !u!82 &1030370522
 AudioSource:
