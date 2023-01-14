@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 275}
-  m_SizeDelta: {x: 700, y: 50}
+  m_SizeDelta: {x: 720, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22851064
 MonoBehaviour:
@@ -5985,11 +5985,34 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6008703eeef801247b3e1e8485dd4484, type: 3}
   - {fileID: 21300000, guid: 75f0da68b882980499b08a6121be9f62, type: 3}
   - {fileID: 21300000, guid: b523143f334343d478b62987beb6a787, type: 3}
+  - {fileID: 21300000, guid: 98486dd24f9bce2448e921c9cf4a50b8, type: 3}
+  - {fileID: 21300000, guid: b78d972ba300ad447a0279059894c43d, type: 3}
+  - {fileID: 21300000, guid: b2f878f890d0f834ab49b8371ae8fe39, type: 3}
+  - {fileID: 21300000, guid: 9762316679b635e4089b5da7349ea3fe, type: 3}
+  - {fileID: 21300000, guid: 942db9ab1983bb841a04c217dd2bbfec, type: 3}
+  - {fileID: 21300000, guid: 18170aabf7f7d3b47b9d01e17a417bc7, type: 3}
+  - {fileID: 21300000, guid: 78e5904e8bc718c46afadce356269c37, type: 3}
+  - {fileID: 21300000, guid: 5bf4d23542ddfa348bf09439faf8f914, type: 3}
+  - {fileID: 21300000, guid: 3db5eb8b2dcc34a44ab0e03b62fc82fc, type: 3}
+  - {fileID: 21300000, guid: f8694d1905593e043a5df26eb2b161ce, type: 3}
+  - {fileID: 21300000, guid: a2ebd33bd06af4a44a716ea2f8d753e8, type: 3}
+  - {fileID: 21300000, guid: 3eb607208bebc60448bf999712db365a, type: 3}
+  - {fileID: 21300000, guid: f0101ebdbda73fb449ed4c08b6554fb9, type: 3}
+  - {fileID: 21300000, guid: 8c3a8d53ba334414ab2c2c74a7836d3c, type: 3}
+  - {fileID: 21300000, guid: 8a0108b6b25ca6b46874593b0e2796f5, type: 3}
+  - {fileID: 21300000, guid: 585eb41171fada5409a5390e17929ccf, type: 3}
+  - {fileID: 21300000, guid: 7ac052af095b29647ba96414fca4531b, type: 3}
+  - {fileID: 21300000, guid: 1a19e8a1915bdd54db53e16f1fdfeba9, type: 3}
+  - {fileID: 21300000, guid: a91fd68a192696049a098d7018baf785, type: 3}
+  - {fileID: 21300000, guid: 1a57e8d5173ef744e95ed7cf9af890b2, type: 3}
+  - {fileID: 21300000, guid: dc6fedfd324b37943995f92a20b36d45, type: 3}
+  - {fileID: 21300000, guid: a75206dce9bc9b144931da922775ae3d, type: 3}
+  - {fileID: 21300000, guid: c1941219db3ff51498661d28e990e98d, type: 3}
   ItemNames:
   - Shiny Apple
   - Sugary Donut
   - Melty Popsicle
-  - Juicy Burger
+  - Lab Grown Burger
   - Mobile Computer
   - Grapefruit
   - Frozen Treat
@@ -6006,7 +6029,30 @@ MonoBehaviour:
   - Strange Dessert
   - Disgruntled Owl
   - Helpful Robot
-  ItemIdealPrices: 01000000010000000100000004000000f4010000010000000100000002000000090000000f00000019000000310000004b00000001000000c70000000100000001000000010000006300000031000000
+  - Light Bulb
+  - Dignifed Butterfly
+  - Kinda Nice Camera
+  - Chocoblop
+  - Eggwich
+  - Electronic Thing
+  - European Fruit Pie
+  - Depressed Fish
+  - Exciting Game Machine
+  - Regal Giraffe
+  - Oldish Gun
+  - Weird Person Hat
+  - Trail Mix
+  - Very Modern Phone
+  - Not So Modern Phone
+  - Hand Cleaner
+  - Agitated Snake
+  - Strawberry
+  - Slightly Used Tank
+  - Sticky Tape
+  - Classy Tea
+  - Virtual Wardrobe Assistant
+  - In A Hurry Zebra
+  ItemIdealPrices: 01000000010000000100000004000000f4010000010000000100000002000000090000000f00000019000000310000004b00000001000000c7000000010000000100000001000000630000003100000002000000020000002700000001000000020000001d00000003000000030000002d000000230000000c00000003000000030000003b00000013000000020000000e000000010000006300000002000000010000000100000041000000
   HUDItemName: {fileID: 22851064}
   HUDItemImage: {fileID: 751879786}
   HUDItemPrice: {fileID: 287866012}
