@@ -14,7 +14,15 @@ public class SceneManager : MonoBehaviour
     [SerializeField]
     GameObject HUDItemContainer1;
 
+    [SerializeField]
+    ParticleSystem ParticlesCash;
+    [SerializeField]
+    ParticleSystem ParticlesCoin;
+
     bool startingIntro = false;
+
+    float particleTimer = 0f;
+    float particleTimerMax = .5f;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +40,16 @@ public class SceneManager : MonoBehaviour
         {
             startingIntro = false;
             HUDStart.GetComponent<MoveNormal>().SetNewLeftEndPos(new Vector2(-1000f, 0));
+        }
 
+        if (particleTimer > 0)
+        {
+            particleTimer -= Time.deltaTime;
+            if (particleTimer <= 0)
+            {
+                ParticlesCash.Stop();
+                ParticlesCoin.Stop();
+            }
         }
     }
 
@@ -42,5 +59,12 @@ public class SceneManager : MonoBehaviour
         HUDFooter.GetComponent<MoveNormal>().MoveDown();
         HUDStart.GetComponent<MoveNormal>().MoveLeft();
         HUDItemContainer1.GetComponent<MoveNormal>().MoveLeft();
+    }
+
+    public void Deflate()
+    {
+        ParticlesCash.Play();
+        ParticlesCoin.Play();
+        particleTimer = particleTimerMax;
     }
 }
