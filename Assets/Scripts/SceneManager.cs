@@ -6,6 +6,8 @@ using TMPro;
 
 public class SceneManager : MonoBehaviour
 {
+    AudioManager audioManager;
+
     [SerializeField]
     GameObject HUDTitle;
     [SerializeField]
@@ -55,6 +57,8 @@ public class SceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = this.GetComponent<AudioManager>();
+
         HUDTitle.GetComponent<MoveNormal>().MoveDown();
         HUDFooter.GetComponent<MoveNormal>().MoveUp();
         HUDStart.GetComponent<MoveNormal>().MoveLeft();
@@ -116,6 +120,7 @@ public class SceneManager : MonoBehaviour
 
     public void StartGame()
     {
+        audioManager.PlayMenuSound();
         HUDTitle.GetComponent<MoveNormal>().MoveUp();
         HUDFooter.GetComponent<MoveNormal>().MoveDown();
         HUDStart.GetComponent<MoveNormal>().MoveLeft();
@@ -147,6 +152,7 @@ public class SceneManager : MonoBehaviour
 
     public void NextItem()
     {
+        audioManager.PlayMenuSound();
         HUDItemContainer1.GetComponent<MoveNormal>().MoveLeft();
         movingItemOff = true;
     }
