@@ -6055,6 +6055,7 @@ MonoBehaviour:
   BooSounds:
   - {fileID: 8300000, guid: 40980c0eb37c2ea468f5bedc005af65c, type: 3}
   - {fileID: 8300000, guid: 5e0b31ca77d817c45906779aa8c0a594, type: 3}
+  CheerSound: {fileID: 8300000, guid: 23c959973803c08479a0bb14bef2add9, type: 3}
 --- !u!82 &1030370522
 AudioSource:
   m_ObjectHideFlags: 0

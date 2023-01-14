@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
     AudioClip[] HitSounds;
     [SerializeField]
     AudioClip[] BooSounds;
+    [SerializeField]
+    AudioClip CheerSound;
 
     void Awake()
     {
@@ -31,6 +33,11 @@ public class AudioManager : MonoBehaviour
     {
         int index = Random.Range(0, BooSounds.Length);
         audioSource.PlayOneShot(BooSounds[index], 1f);
+    }
+
+    public void PlayCheerSound()
+    {
+        audioSource.PlayOneShot(CheerSound, 1f);
     }
 
 }

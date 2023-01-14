@@ -146,6 +146,7 @@ public class SceneManager : MonoBehaviour
         HUDItemPrice.text = "Price: $" + currentPrice;
         if (currentPrice == ItemIdealPrices[itemIndex])
         {
+            audioManager.PlayCheerSound();
             deflated = true;
             HUDInstructions.SetActive(false);
             HUDDeflated.SetActive(true);
