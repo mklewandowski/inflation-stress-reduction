@@ -42,6 +42,9 @@ public class SceneManager : MonoBehaviour
     GameObject HUDNext;
 
     bool startingIntro = false;
+    bool movingItemOff = false;
+    bool movingItemOn = false;
+    bool deflated = false;
 
     float particleTimer = 0f;
     float particleTimerMax = .5f;
@@ -62,11 +65,16 @@ public class SceneManager : MonoBehaviour
 
     void SetItem()
     {
+        HUDInstructions.SetActive(true);
+        HUDDeflated.SetActive(false);
+        HUDNext.SetActive(false);
+
         itemIndex = Random.Range(0, ItemNames.Length);
         currentPrice = Random.Range(ItemIdealPrices[itemIndex] * 30, ItemIdealPrices[itemIndex] * 50);
         HUDItemPrice.text = "Price: $" + currentPrice;
         HUDItemName.text = ItemNames[itemIndex];
         HUDItemImage.GetComponent<Image>().sprite = ItemSprites[itemIndex];
+        deflated = false;
     }
 
     // Update is called once per frame
@@ -76,6 +84,23 @@ public class SceneManager : MonoBehaviour
         {
             startingIntro = false;
             HUDStart.GetComponent<MoveNormal>().SetNewLeftEndPos(new Vector2(-1000f, 0));
+        }
+
+        if (movingItemOn && !HUDItemContainer1.GetComponent<MoveNormal>().IsMoving())
+        {
+            movingItemOn = false;
+            HUDItemContainer1.GetComponent<MoveNormal>().SetNewLeftEndPos(new Vector2(-1000f, 0));
+        }
+        if (movingItemOff && !HUDItemContainer1.GetComponent<MoveNormal>().IsMoving())
+        {
+            movingItemOff = false;
+            HUDItemContainer1.transform.localPosition = new Vector2(1000f, 0);
+            HUDItemContainer1.GetComponent<MoveNormal>().SetNewLeftEndPos(new Vector2(0, 0));
+
+            SetItem();
+
+            HUDItemContainer1.GetComponent<MoveNormal>().MoveLeft();
+            movingItemOn = true;
         }
 
         if (particleTimer > 0)
@@ -95,10 +120,14 @@ public class SceneManager : MonoBehaviour
         HUDFooter.GetComponent<MoveNormal>().MoveDown();
         HUDStart.GetComponent<MoveNormal>().MoveLeft();
         HUDItemContainer1.GetComponent<MoveNormal>().MoveLeft();
+        movingItemOn = true;
     }
 
     public void Deflate()
     {
+        if (deflated)
+            return;
+
         HUDItemImage.GetComponent<GrowAndShrink>().StartEffect();
         ParticlesCash.Play();
         ParticlesCoin.Play();
@@ -107,5 +136,18 @@ public class SceneManager : MonoBehaviour
         int priceDecrement = Random.Range(ItemIdealPrices[itemIndex] * 1, ItemIdealPrices[itemIndex] * 5);
         currentPrice = Mathf.Max(currentPrice - priceDecrement, ItemIdealPrices[itemIndex]);
         HUDItemPrice.text = "Price: $" + currentPrice;
+        if (currentPrice == ItemIdealPrices[itemIndex])
+        {
+            deflated = true;
+            HUDInstructions.SetActive(false);
+            HUDDeflated.SetActive(true);
+            HUDNext.SetActive(true);
+        }
+    }
+
+    public void NextItem()
+    {
+        HUDItemContainer1.GetComponent<MoveNormal>().MoveLeft();
+        movingItemOff = true;
     }
 }
