@@ -1,7 +1,7 @@
 # Inflation Stress Reduction
 A stress reduction clicker designed to ease the pain of rising inflation.
 
-![Inflation Stress Reduction gameplay](https://github.com/mklewandowski/inflation-stress-reduction/tree/main/Assets/Images/gameplay.gif?raw=true)
+![Inflation Stress Reduction gameplay](https://github.com/mklewandowski/inflation-stress-reduction/blob/main/Assets/Images/gameplay.gif?raw=true)
 
 ## Supported Platforms
 Inflation Stress Reduction is designed for use on multiple platforms including:
