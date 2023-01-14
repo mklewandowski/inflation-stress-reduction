@@ -94,6 +94,7 @@ public class SceneManager : MonoBehaviour
         {
             movingItemOn = false;
             HUDItemContainer1.GetComponent<MoveNormal>().SetNewLeftEndPos(new Vector2(-1000f, 0));
+            audioManager.PlayBooSound();
         }
         if (movingItemOff && !HUDItemContainer1.GetComponent<MoveNormal>().IsMoving())
         {

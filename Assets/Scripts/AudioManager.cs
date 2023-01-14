@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
     AudioClip MenuSound;
     [SerializeField]
     AudioClip[] HitSounds;
+    [SerializeField]
+    AudioClip[] BooSounds;
 
     void Awake()
     {
@@ -23,6 +25,12 @@ public class AudioManager : MonoBehaviour
     {
         int index = Random.Range(0, HitSounds.Length);
         audioSource.PlayOneShot(HitSounds[index], .5f);
+    }
+
+    public void PlayBooSound()
+    {
+        int index = Random.Range(0, BooSounds.Length);
+        audioSource.PlayOneShot(BooSounds[index], 1f);
     }
 
 }
