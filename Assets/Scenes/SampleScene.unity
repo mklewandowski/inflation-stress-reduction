@@ -159,7 +159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 275}
-  m_SizeDelta: {x: 800, y: 50}
+  m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22851064
 MonoBehaviour:
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 30
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -5966,11 +5966,45 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1209436afc9a5f940b700168326027f6, type: 3}
   - {fileID: 21300000, guid: dc769c0dafd6e134b91069bdc4ad906f, type: 3}
   - {fileID: 21300000, guid: b55d187c3dc0852408018d105c82845f, type: 3}
+  - {fileID: 21300000, guid: 92fec5508ecd2c64d8bd309419f23a90, type: 3}
+  - {fileID: 21300000, guid: dbf65ff0aa3ebd945b9a862e5b9b7a1a, type: 3}
+  - {fileID: 21300000, guid: d63bd85a3cff5cb49a927ba2b6ccee06, type: 3}
+  - {fileID: 21300000, guid: dc96b2bf4e2a68341bf3384949104633, type: 3}
+  - {fileID: 21300000, guid: 04f762a0e0a613e4fb87df191f74f1ac, type: 3}
+  - {fileID: 21300000, guid: 12afafe1dd2dc9043aa61aed382197e1, type: 3}
+  - {fileID: 21300000, guid: 04bd6c524d0c7864b817861b83cd3f21, type: 3}
+  - {fileID: 21300000, guid: d593ba1dde60235498a2f262e95479fe, type: 3}
+  - {fileID: 21300000, guid: 7a58a003e54065d4099dee756d94b0dc, type: 3}
+  - {fileID: 21300000, guid: 590c7c000e23faf4c8308cee28b1a6bc, type: 3}
+  - {fileID: 21300000, guid: d50cc6674ec4a23499e5322db0a4849f, type: 3}
+  - {fileID: 21300000, guid: 2dc59706aa6d5d041ba281bbbba9cbb6, type: 3}
+  - {fileID: 21300000, guid: 512300d81dd210b4ab36a4e5edc909a7, type: 3}
+  - {fileID: 21300000, guid: 4e1df5f1671de1d4a993704b726d1bec, type: 3}
+  - {fileID: 21300000, guid: 6008703eeef801247b3e1e8485dd4484, type: 3}
+  - {fileID: 21300000, guid: 75f0da68b882980499b08a6121be9f62, type: 3}
+  - {fileID: 21300000, guid: b523143f334343d478b62987beb6a787, type: 3}
   ItemNames:
   - Shiny Apple
   - Sugary Donut
   - Melty Popsicle
-  ItemIdealPrices: 010000000100000001000000
+  - Juicy Burger
+  - Mobile Computer
+  - Grapefruit
+  - Frozen Treat
+  - Holiday Pie
+  - Berry Pie
+  - Weird Pizza
+  - Dim-Witted Turtle
+  - Congested Badger
+  - Man-Eating Bear
+  - Loose Berries
+  - Slightly Outdated Computer
+  - A Couple Of Cookies
+  - Some Crackers
+  - Strange Dessert
+  - Disgruntled Owl
+  - Helpful Robot
+  ItemIdealPrices: 01000000010000000100000004000000f4010000010000000100000002000000090000000f00000019000000310000004b00000001000000c70000000100000001000000010000006300000031000000
   HUDItemName: {fileID: 22851064}
   HUDItemImage: {fileID: 751879786}
   HUDItemPrice: {fileID: 287866012}
