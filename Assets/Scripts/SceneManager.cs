@@ -73,7 +73,13 @@ public class SceneManager : MonoBehaviour
         HUDDeflated.SetActive(false);
         HUDNext.SetActive(false);
 
-        itemIndex = Random.Range(0, ItemNames.Length);
+        int newItemIndex = 0;
+        do
+        {
+            newItemIndex = Random.Range(0, ItemNames.Length);
+        } while (newItemIndex == itemIndex);
+
+        itemIndex = newItemIndex;
         currentPrice = Random.Range(ItemIdealPrices[itemIndex] * 30, ItemIdealPrices[itemIndex] * 50);
         HUDItemPrice.text = "Price: $" + currentPrice;
         HUDItemName.text = ItemNames[itemIndex];
