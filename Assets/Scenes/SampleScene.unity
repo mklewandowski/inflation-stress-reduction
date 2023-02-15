@@ -12679,7 +12679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1-800-BY-THEREALMATTKAIN
+  m_text: 1-800-BY-LEWANDOWSKI-BROS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a74b87b3251b13f45a280acfa56fcb3d, type: 2}
   m_sharedMaterial: {fileID: -7019389900542012537, guid: a74b87b3251b13f45a280acfa56fcb3d, type: 2}
@@ -12706,8 +12706,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
